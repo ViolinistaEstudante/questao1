@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <link rel="stylesheet" href="questions1.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="menu">
+            <h2>Questions</h2>
+            <nav>
+                <ul>
+                    <li><a href="question1.html"> 🎧 Question 1 - Listening</a></li>
+                    <li><a href="#"> ✍ Question 2 - Word Search </a></li>
+                    <li><a href="#"> 🔠 Question 3 - Multiple Choice </a></li>
+                    <li><a href="#"> 📓 Question 4 - Fill Blanks </a></li>
+                    <li><a href="#"> 👋 Question 5 - Drag and Drop </a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <header>
+                <h1>🎧 Question 1 - Listening</h1>
+                <p>Bem-vindo à Questão 1! Nesta questão, ouça a música escolhida, e responda a pergunta...</p>
+            </header>
+
+            <section class="video-section">
+                <h2>Listen to the music:</h2>
+                <video controls width="600">
+                    <source src="/img/Queen - We Will Rock You [Lyrics].mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <div class="quiz-container">
+                <p>What is the main theme of the song "We Will Rock You" by Queen?</p>
+                <div class="options">
+                    <button onclick="checkAnswer('a')">A. Overcoming challenges</button>
+                    <button onclick="checkAnswer('b')">B. Celebrating love</button>
+                    <button onclick="checkAnswer('c')">C. Dancing at a party</button>
+                    <button onclick="checkAnswer('d')">D. Traveling the world</button>
+                </div>
+                <p id="result" class="result"></p>
+            </div>
+        </main>
+    </div>
+
+    <script src="question.js"></script>
+</body>
+</html>
